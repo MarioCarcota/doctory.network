@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import {
   CalendarIcon,
+  Coins,
   FileSearch,
   GraduationCap,
   HomeIcon,
@@ -62,8 +63,11 @@ const DATA = {
 };
 
 function DockPlatform() {
+  //SIMULATE GETTING TOKENS FROM USER
+  const userTokens = "400";
+
   return (
-    <div className="absolute bottom-5 flex h-fit w-full flex-col">
+    <div className="fixed bottom-8 scale-125 flex h-fit w-full flex-col">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.base.map((item) => (
@@ -107,6 +111,24 @@ function DockPlatform() {
               </Tooltip>
             </DockIcon>
           ))}
+          <Separator orientation="vertical" className="h-full py-2" />
+          <DockIcon className={"px-10"}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href={"/account/charge"}
+                  className={
+                    "flex gap-2 text-accent hover:bg-primary rounded-xl p-2"
+                  }
+                >
+                  <Coins /> {userTokens || 0}
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Tokens</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
           <Separator orientation="vertical" className="h-full py-2" />
           <DockIcon>
             <Tooltip>
