@@ -78,7 +78,7 @@ function DockPlatform() {
                     href={item.href}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full hover:bg-primary hover:text-white"
+                      "size-12 rounded-full"
                     )}
                   >
                     <item.icon size={item.size || 20} />
@@ -99,7 +99,7 @@ function DockPlatform() {
                     href={item.href}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full hover:bg-primary hover:text-white"
+                      "size-12 rounded-full"
                     )}
                   >
                     <item.icon size={item.size || 20} />
@@ -117,9 +117,10 @@ function DockPlatform() {
               <TooltipTrigger asChild>
                 <Link
                   href={"/account/charge"}
-                  className={
-                    "flex gap-2 text-accent hover:bg-primary rounded-xl p-2"
-                  }
+                  className={cn(
+                    buttonVariants({ variant: "ghost" }),
+                    "flex gap-2 text-accent  rounded-xl p-2"
+                  )}
                 >
                   <Coins /> {userTokens || 0}
                 </Link>
