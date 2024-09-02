@@ -3,7 +3,7 @@ import "/styles/global.css";
 import { ThemeProvider } from "@/components/utilities/ThemeProvider";
 
 export const metadata = {
-  title: "Doctory.network!",
+  title: "Doctory.network",
   description: "",
 };
 
