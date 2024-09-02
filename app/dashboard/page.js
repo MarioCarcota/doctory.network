@@ -1,3 +1,6 @@
+import Notifications from "@/components/dashboard/notifications";
+import { FadeAn } from "@/components/transitions/FadeTransition";
+
 export const metadata = {
   title: "Dashboard || Doctory.Network",
   description: "",
@@ -27,6 +30,15 @@ export const metadata = {
 
 export default async function DashBoard() {
   return (
-    <main className="flex max-w-screen-2xl mx-auto min-h-screen flex-col items-center px-3 lg:px-6"></main>
+    <main className="flex max-w-screen-2xl mx-auto min-h-screen flex-col items-center px-3 lg:px-6">
+      <FadeAn className={"w-full"}>
+        <div className="flex justify-between items-center w-full mt-8">
+          <h2 className="text-3xl md:text-7xl font-bold tracking-tight">
+            Dashboard
+          </h2>
+          <Notifications />
+        </div>
+      </FadeAn>
+    </main>
   );
 }

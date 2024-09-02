@@ -10,6 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" as="image" href="/images/loginImage.jpg"></link>
+      </head>
       <body>
         <ThemeProvider
           attribute="class"
