@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 97.25%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -67,7 +67,7 @@
   }
 
   body {
-    @apply text-foreground;
+    @apply bg-background text-foreground;
   }
 }
 
@@ -75,7 +75,6 @@ html,
 body {
   font-family: "Poppins", sans-serif !important;
   scroll-behavior: smooth;
-  background-color: #f8f8f8;
 }
 
 :focus-visible {

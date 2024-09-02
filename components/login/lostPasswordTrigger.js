@@ -102,7 +102,11 @@ export function DialogForgotPassword({ mail }) {
                 type="submit"
                 onClick={handleSubmit}
                 disabled={isLoading}
-                className={isLoading ? "cursor-not-allowed" : ""}
+                className={
+                  isLoading
+                    ? "cursor-not-allowed dark:text-white"
+                    : "dark:text-white"
+                }
               >
                 {isLoading
                   ? "Searching for your profile..."

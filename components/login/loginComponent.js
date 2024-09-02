@@ -169,7 +169,7 @@ function LoginPage() {
               <Button
                 disabled={isButtonDisabled}
                 type="submit"
-                className="w-full"
+                className="w-full dark:text-white"
               >
                 {isLoading
                   ? "Searching for your profile..."
@@ -184,7 +184,7 @@ function LoginPage() {
             alt="Image"
             width="1920"
             height="1080"
-            className="h-full rounded-lg w-full object-cover dark:brightness-[0.2] dark:grayscale"
+            className="h-full rounded-lg w-full object-cover dark:brightness-[0.6]"
           />
         </div>
       </div>
