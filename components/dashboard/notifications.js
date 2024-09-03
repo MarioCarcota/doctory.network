@@ -135,7 +135,7 @@ function Notifications() {
                   <div>
                     <h4>
                       <Link
-                        href={notification.link}
+                        href={"/professionals/" + notification.link}
                         className="font-semibold hover:underline"
                       >
                         {notification.user}
