@@ -67,7 +67,7 @@ function DockPlatform() {
   const userTokens = "400";
 
   return (
-    <div className="fixed bottom-8 -left-1 md:left-0 scale-90 md:scale-125 hidden md:flex h-fit w-full flex-col">
+    <div className="z-50 fixed bottom-8 -left-1 md:left-0 scale-90 md:scale-125 hidden md:flex h-fit w-full flex-col">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.base.map((item) => (

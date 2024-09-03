@@ -1,4 +1,7 @@
+import { DashboardLayout } from "@/components/dashboard/mainLayout";
 import Notifications from "@/components/dashboard/notifications";
+import RenderDashboard from "@/components/dashboard/renderDashBoard";
+import { MobileMenu } from "@/components/layout/mobileMenu";
 import { FadeAn } from "@/components/transitions/FadeTransition";
 
 export const metadata = {
@@ -36,8 +39,15 @@ export default async function DashBoard() {
           <h2 className="text-3xl md:text-7xl font-bold tracking-tight">
             Dashboard
           </h2>
-          <Notifications />
+          <div className="flex flex-row flex-nowrap gap-3">
+            <Notifications />
+            <div className="md:hidden block">
+              <MobileMenu />
+            </div>
+          </div>
         </div>
+
+        <RenderDashboard />
       </FadeAn>
     </main>
   );
