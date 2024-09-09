@@ -76,7 +76,3 @@ body {
   font-family: "Poppins", sans-serif !important;
   scroll-behavior: smooth;
 }
-
-:focus-visible {
-  outline-color: #0066cc !important;
-}
