@@ -5,6 +5,7 @@ import {
   BriefcaseMedical,
   CheckCircle,
   MailOpen,
+  MapPin,
   Pin,
   Stethoscope,
 } from "lucide-react";
@@ -126,7 +127,7 @@ export function DashboardLayout() {
                     </p>
                     <p className="flex gap-1 items-center text-sm text-muted-foreground">
                       <div>
-                        <Pin className="h-4 w-4" />
+                        <MapPin className="h-4 w-4" />
                       </div>
                       {user.individual_place}
                     </p>
