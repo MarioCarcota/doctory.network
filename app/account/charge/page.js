@@ -1,19 +1,19 @@
-import { ProfileForm } from "@/components/account/components/profileForm";
+import PaymentFormTokens from "@/components/account/components/ChargeForm";
 
 export const metadata = {
-  title: "Account || Doctory.Network",
+  title: "Charge Tokens || Doctory.Network",
   description: "",
   openGraph: {
-    title: "Account || Doctory.Network",
+    title: "Charge Tokens || Doctory.Network",
     description: "",
-    url: "https://doctory-network.com/account",
+    url: "https://doctory-network.com/account/charge",
     siteName: "doctory-network",
     images: [
       {
         url: "https://doctory-network.com/about-cover-image.jpg",
         width: 800,
         height: 600,
-        alt: "Account Doctory Network",
+        alt: "Charge Tokens Doctory Network",
       },
     ],
     locale: "en_US",
@@ -21,12 +21,12 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Account || Doctory.Network",
+    title: "Charge Tokens || Doctory.Network",
     description: "",
     images: ["https://doctory-network.com/about-cover-image.jpg"],
   },
 };
 
-export default async function Account() {
-  return <ProfileForm />;
+export default async function ChargeTokens() {
+  return <PaymentFormTokens />;
 }
