@@ -1,9 +1,9 @@
 "use client";
 
+import { buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { buttonVariants } from "../ui/Button";
 
 export function DataTableRowActions({ row }) {
   return (

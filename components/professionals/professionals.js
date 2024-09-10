@@ -1,6 +1,6 @@
 import { dataDoctory } from "@/public/data/dataFile";
-import { columns } from "../professionals/columns";
-import { DataTable } from "../professionals/data-table";
+import { columns } from "./tables/columns";
+import { DataTable } from "./tables/data-table";
 
 function ProfDashboard() {
   return (

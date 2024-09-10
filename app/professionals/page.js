@@ -1,7 +1,6 @@
 import Notifications from "@/components/dashboard/notifications";
 import { MobileMenu } from "@/components/layout/mobileMenu";
-import ProfDashboard from "@/components/pages/professionals";
-import RenderProfessionals from "@/components/pages/renderProfessionals";
+import RenderProfessionals from "@/components/professionals/renderProfessionals";
 import { FadeAn } from "@/components/transitions/FadeTransition";
 
 export const metadata = {

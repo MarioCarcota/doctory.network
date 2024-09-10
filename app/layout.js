@@ -1,6 +1,7 @@
 import NavBar from "@/components/layout/navbar";
 import "/styles/global.css";
 import { ThemeProvider } from "@/components/utilities/ThemeProvider";
+import { Toaster } from "sonner";
 
 export const metadata = {
   title: "Doctory.network",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         >
           <NavBar />
           {children}
+          <Toaster richColors />
         </ThemeProvider>
       </body>
     </html>
