@@ -1,4 +1,5 @@
 import CandidatePage from "@/components/candidate/candidatePage";
+import RenderCandidate from "@/components/candidate/rendererCandidate";
 import { FadeAn } from "@/components/transitions/FadeTransition";
 import { dataDoctory } from "@/public/data/dataFile";
 export default async function ProfessionalUser({ params: { user } }) {
@@ -10,7 +11,7 @@ export default async function ProfessionalUser({ params: { user } }) {
   return (
     <main className="flex max-w-screen-2xl mx-auto min-h-screen flex-col items-center px-3 lg:px-6">
       <FadeAn className={"w-full"}>
-        <CandidatePage user={userData} />
+        <RenderCandidate user={userData} />
       </FadeAn>
     </main>
   );
