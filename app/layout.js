@@ -2,6 +2,7 @@ import NavBar from "@/components/layout/navbar";
 import "/styles/global.css";
 import { ThemeProvider } from "@/components/utilities/ThemeProvider";
 import { Toaster } from "sonner";
+import { CommandCLI } from "@/components/command-cli/CommandLine";
 
 export const metadata = {
   title: "Doctory.network",

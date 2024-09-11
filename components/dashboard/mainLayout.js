@@ -10,7 +10,6 @@ import {
   Stethoscope,
 } from "lucide-react";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import {
   Card,
   CardContent,
@@ -85,17 +84,16 @@ export function DashboardLayout() {
           <Card
             x-chunk="dashboard-01-chunk-3"
             className={
-              "md:flex hidden cursor-pointer bg-primary hover:bg-primary/90 justify-between flex-col"
+              "md:flex hidden  bg-primary/20  justify-between flex-col"
             }
           >
             <CardHeader className="flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-base font-sembold text-white">
+              <CardTitle className="text-base font-sembold ">
                 Get quick access to the terminal
               </CardTitle>
-              <ArrowUpRight size={20} className="text-white" />
             </CardHeader>
             <CardContent>
-              <p className="text-base font-light text-white">
+              <p className="text-base font-light ">
                 Press{" "}
                 <kbd className="text-sm pointer-events-none inline-flex select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono font-medium text-muted-foreground opacity-100">
                   <span>⌘</span>K
